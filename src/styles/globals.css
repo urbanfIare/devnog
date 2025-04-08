@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -20,7 +24,58 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-[#f5f6f8] text-slate-800 font-sans antialiased;
+}
+
+.prose-custom {
+  @apply max-w-3xl mx-auto leading-relaxed text-slate-800;
+  @apply leading-loose tracking-normal space-y-6; /* 글간 간격, 줄간격 */
+}
+
+/* 제목 */
+.prose-custom h1, .prose-custom h2, .prose-custom h3 {
+  @apply font-semibold text-slate-900 tracking-tight;
+}
+
+/* 링크 */
+.prose-custom a {
+  @apply text-blue-600 underline hover:text-blue-700;
+}
+
+/* 코드블록 */
+.prose-custom pre {
+  @apply bg-[#f6f8fa] text-sm rounded-lg p-5 overflow-x-auto border border-slate-200;
+}
+
+/* 인라인 코드 */
+.prose-custom code {
+  @apply text-pink-600 font-mono text-sm bg-slate-100 px-1 rounded;
+}
+
+/* 인용구 */
+.prose-custom blockquote {
+  @apply border-l-4 border-blue-300 bg-blue-50 px-4 py-3 italic text-gray-700 rounded;
+}
+
+/* 리스트 */
+.prose-custom ul {
+  @apply list-disc pl-5;
+}
+
+.prose-custom ul li::marker {
+  @apply text-slate-400;
+}
+
+.prose-custom hr {
+  @apply my-10 border-slate-300;
+}
+
+/* globals.css */
+.prose-custom table {
+  @apply table-auto border-collapse w-full text-sm;
+}
+
+.prose-custom th,
+.prose-custom td {
+  @apply border px-3 py-2 text-left;
 }
