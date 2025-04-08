@@ -1,4 +1,4 @@
-import { getAllPosts, getAllCategories } from '../lib/posts';
+import { getAllPosts, getAllCategories } from '../../lib/posts';
 import Sidebar from '../../components/Sidebar';
 import Link from 'next/link';
 

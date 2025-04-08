@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getAllPosts, getAllCategories } from '../lib/posts';
+import { getAllPosts, getAllCategories } from '../../lib/posts';
 import Sidebar from '../../components/Sidebar'; // 사이드바 직접 import
 
 export async function getStaticProps() {

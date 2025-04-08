@@ -1,5 +1,5 @@
 // 📄 src/pages/blog/[slug].js
-import { getPostBySlug, getAllPosts } from '../lib/posts';
+import { getPostBySlug, getAllPosts } from '../../lib/posts';
 import { remark } from 'remark';
 import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
