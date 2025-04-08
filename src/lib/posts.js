@@ -34,15 +34,16 @@ export function getPostBySlug(slug) {
     };
 }
 
+// category 정렬
 export function getAllCategories() {
-    const posts = getAllPosts();
-    const categories = new Set();
-  
-    posts.forEach((post) => {
-      if (post.categories) {
-        post.categories.forEach((category) => categories.add(category));
-      }
-    });
-  
-    return Array.from(categories);
-} 
+  const posts = getAllPosts();
+  const categories = new Set();
+
+  posts.forEach((post) => {
+    if (post.category) {
+      categories.add(post.category);
+    }
+  });
+
+  return Array.from(categories);
+}

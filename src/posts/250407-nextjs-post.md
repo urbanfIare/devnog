@@ -1,5 +1,5 @@
 ---
-title: "Spring Boot + PostgreSQL API 개발 기록"
+title: "Next.js 블로그 개발일지 - Spring Boot + PostgreSQL API 개발 기록"
 date: "2025-04-07"
 category: "개발일지"
 summary: "Spring Boot로 백엔드 API를 구축하고 PostgreSQL과 연결을 완료했습니다."
