@@ -1,5 +1,5 @@
-import { AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import MainContent from '../components/MainContent'
