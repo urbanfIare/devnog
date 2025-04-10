@@ -6,7 +6,7 @@ export default function Header() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 border-b shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold tracking-tight text-blue-600 hover:text-blue-800 transition-colors">
-            DevLog
+            UrbanFIare
           </Link>
           <nav className="space-x-4 text-sm text-slate-600">
             <Link href="/blog" className="hover:text-blue-600 transition-colors">Blog</Link>

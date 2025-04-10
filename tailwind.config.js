@@ -5,7 +5,7 @@ module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          sans: ['Inter', 'sans-serif'],
+          sans: ['Inter', 'sans-serif','"Noto Sans KR"', 'ui-sans-serif', 'system-ui'],
         },
       },
     },
